@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bank Application</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="validation.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1 class="form-top">Application for Bank Stuff</h1>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+
+		<label for="first">First name:</label>
+		<input type="text" class="personal-info"/>
+
+		<label for="middle">Middle initial:</label>
+		<input type="text" class="personal-info">
+
+		<label for="last">Last name:</label>
+		<input type="text" class="personal-info">
+
+		<label for="address">Address:</label>
+		<textarea name="address" class="personal-info" rows="4"></textarea>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Work Information</legend>
+	
+		<label for="job">Occupation:</label>
+		<input type="text" class="work-info">
+
+		<label for="employer">Employer:</label>
+		<input type="text" class="work-info">
+
+		<label for="job-address" class="work-info">Employer address:</label>
+		<textarea name="job-address" class="work-info" rows="4"></textarea>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Loan Inquiry</legend>
+
+		<div>
+			<label>Type of Loan</label>
+			<select class="loan drop">
+				<option>Commercial</option>
+				<option>Real Estate</option>
+				<option>Personal</option>
+				<option>Mortgage</option>
+			</select>
+		</div>
+
+		<label for="loan-amount" class="loan">Requested Loan Amount:</label>
+		<input type="text" class="work-info" placeholder="$100,000">
+
+		<label for="length" class="loan">Requested Loan Length</label>
+			<input type="radio" name="loan-length" value="5">5 years
+			<input type="radio" name="loan-length" value="15">15 years
+			<input type="radio" name="loan-length" value="30">30 years
+
+		<label for="special-condition" class="loan">Any special conditions to note?</label>
+			<input type="checkbox" name="special" value="down-payment">I have a downpayment
+			<input type="checkbox" name="special" value="out-of-state">I'm an out-of-state resident
+			<input type="checkbox" name="special" value="married">I am married
+			<input type="checkbox" name="special" value="cosign">I will have a cosignor
+	</fieldset>
+
+	<fieldset>
+		<legend>Additional comments</legend>
+
+		<textarea name="comments" rows="8" cols="30" placeholder="ex. I've worked with your bank before and was very pleased!">
+		</textarea>
+
+	</fieldset>
+	
+	<fieldset>
+		<legend>Contact info:</legend>
+
+		<label>Email:</label>
+		<input type="email" class="email" placeholder="me@you.com" required>
+
+		<label>Telephone:</label>
+		<input type="tel" class="tel" placeholder="555-555-5555" required>
+
+		<label>LinkedIn URL:</label>
+		<input type="url" class="url" placeholder="http://www.linkedin.com/" required>
+
+		<button type="">Apply!</button>
+
+
+
+	</fieldset>
+
+</body>
+</html>

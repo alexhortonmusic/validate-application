@@ -1,0 +1,11 @@
+.url:invalid,
+.tel:invalid, 
+.email:invalid {
+	background: red;
+}
+
+.url:valid,
+.tel:valid, 
+.email:valid {
+	background: green;
+}
